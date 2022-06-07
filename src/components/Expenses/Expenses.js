@@ -19,7 +19,7 @@ const Expenses = (props) => {
   );
 
   return (
-    <li>
+    <li className="expenses-li">
       <Card className="expenses">
         <ExpansesFilter selected={filteredDate} getNewYear={saveDate} />
 
