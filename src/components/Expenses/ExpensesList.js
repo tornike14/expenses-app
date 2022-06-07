@@ -5,9 +5,7 @@ import ExpenseItem from "./ExpenseItem";
 import "./ExpensesList.css";
 
 const ExpensesList = (props) => {
-  let emptyText = (
-    <h2 className="expenses-list__fallback">There are no expenses.</h2>
-  );
+  let emptyText = <h2 className="expenses-list__fallback">There are no expenses.</h2>;
 
   if (props.data.length === 0) {
     return emptyText;
